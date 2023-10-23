@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romlambe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 12:21:47 by romlambe          #+#    #+#             */
-/*   Updated: 2023/10/23 16:35:44 by romlambe         ###   ########.fr       */
+/*   Created: 2023/10/23 16:06:18 by romlambe          #+#    #+#             */
+/*   Updated: 2023/10/23 16:32:51 by romlambe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,8 @@ char	*to_write(char **stack)
 		i++;
 	dest = ft_strndup(temp, i);
 	*stack = ft_strndup(temp + i, ft_strlen(temp + i));
-	free(temp);
+	if (temp)
+		free(temp);
+	temp = NULL;
 	return (dest);
 }
