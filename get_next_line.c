@@ -6,7 +6,7 @@
 /*   By: romlambe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 12:13:47 by romlambe          #+#    #+#             */
-/*   Updated: 2023/10/23 16:38:20 by romlambe         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:38:44 by romlambe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,7 @@ char	*get_next_line(int fd)
 	free (buffer);
 	return (to_write (&stack));
 }
+
+
+
+
