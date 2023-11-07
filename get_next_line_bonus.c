@@ -6,7 +6,7 @@
 /*   By: romlambe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:06:35 by romlambe          #+#    #+#             */
-/*   Updated: 2023/10/23 16:37:25 by romlambe         ###   ########.fr       */
+/*   Updated: 2023/11/02 10:26:53 by romlambe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*get_next_line(int fd)
 {
 	char		*buffer;
-	static char	*stack[1024];
+	static char	*stack[4096];
 	int			valread;
 
 	if (fd == -1)

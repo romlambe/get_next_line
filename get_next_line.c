@@ -6,7 +6,7 @@
 /*   By: romlambe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 12:13:47 by romlambe          #+#    #+#             */
-/*   Updated: 2023/10/24 10:38:44 by romlambe         ###   ########.fr       */
+/*   Updated: 2023/10/26 14:32:36 by romlambe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,20 @@ char	*get_next_line(int fd)
 	free (buffer);
 	return (to_write (&stack));
 }
+/*#include <stdio.h>
+int main()
+{
+	int fd = open("txt", O_RDONLY);
+	char *lign;
 
+	lign = get_next_line(fd);
 
-
-
+	printf("%s", lign);
+	free(lign);
+	lign = get_next_line(fd);
+	printf("%s", lign);
+	lign = get_next_line(fd);
+	printf("%s", lign);
+	lign = get_next_line(fd);
+	printf("%s", lign);
+}*/
